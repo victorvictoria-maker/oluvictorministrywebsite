@@ -1,5 +1,9 @@
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
+export const metadata = {
+  title: "About Us",
+};
+
 const AboutPage = () => {
   return (
     <>
