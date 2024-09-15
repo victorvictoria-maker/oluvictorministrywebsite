@@ -26,7 +26,10 @@ const Navbar = () => {
           >
             About Us
           </Link>
-          <Link href='/' className='text-lg font-openSans hover:text-gray-700'>
+          <Link
+            href='/devotionals'
+            className='text-lg font-openSans hover:text-gray-700'
+          >
             Devotional
           </Link>
 
@@ -70,14 +73,14 @@ const Navbar = () => {
             <FiX />
           </button>
           <Link
-            href='/'
+            href='/about-us'
             className='text-2xl text-black font-openSans'
             onClick={toggleMenu}
           >
             About Us
           </Link>
           <Link
-            href='/'
+            href='/devotionals'
             className='text-2xl text-black font-openSans'
             onClick={toggleMenu}
           >

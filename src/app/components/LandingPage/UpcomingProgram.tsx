@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
+
 const UpcomingProgram = () => {
   return (
     <section className='bg-white py-12'>
@@ -9,7 +10,7 @@ const UpcomingProgram = () => {
           <span className='inline-block mb-2 relative'>Our Next Program</span>
         </h2>
 
-        <div className=' shadow-md rounded-lg p-8 grid grid-cols-1 md:grid-cols-2 items-center space-y-6 md:space-y-0 md:space-x-8'>
+        <div className='shadow-md rounded-lg p-8 grid grid-cols-1 md:grid-cols-2 items-center space-y-6 md:space-y-0 md:space-x-8'>
           <div className='flex justify-center md:justify-start'>
             <Image
               src='/images/GNC2024.jpg'
