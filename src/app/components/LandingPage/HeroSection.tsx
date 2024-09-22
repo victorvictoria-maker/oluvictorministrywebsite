@@ -24,13 +24,13 @@ const HeroSection = () => {
 
         <div className='flex space-x-4 justify-center font-montserrat'>
           <Link
-            href='/about'
+            href='/devotionals'
             className='border border-white text-white px-6 py-3  text-lg font-semibold hover:bg-white hover:text-black transition duration-300'
           >
             Goodnews Devotional
           </Link>
           <Link
-            href='/services'
+            href='/about-us'
             className='border border-white text-white px-6 py-3 text-lg font-semibold hover:bg-white  hover:text-black transition duration-300'
           >
             About Us

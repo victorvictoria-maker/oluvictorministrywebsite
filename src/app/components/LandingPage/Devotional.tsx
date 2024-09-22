@@ -8,11 +8,51 @@ const Devotional = async () => {
   console.log(todayDevotional);
 
   if ("error" in todayDevotional) {
-    return (
-      <p>
-        There was an error loading today’s devotional: {todayDevotional.error}
-      </p>
-    );
+    console.log(todayDevotional.error);
+
+    return null;
+    // return (
+    //   <p>
+    //     There was an error loading today’s devotional: {todayDevotional.error}
+    //   </p>
+    //   <section className='bg-gray-100 py-12'>
+    //   <div className='container mx-auto px-6 '>
+    //     <h2 className='text-4xl md:text-5xl font-extrabold text-center mb-4 text-gray-300'>
+    //       <div className='h-8 w-56 mx-auto bg-gray-300 rounded animate-pulse'></div>
+    //     </h2>
+
+    //     <div className='shadow-md rounded-lg p-8 grid grid-cols-1 md:grid-cols-2 items-center gap-6'>
+    //       <div className='md:pr-8'>
+    //         <div className='h-10 w-full bg-gray-300 rounded mb-4 animate-pulse'></div>
+
+    //         <div className='text-gray-500 text-lg mb-4'>
+    //           <div className='h-5 w-32 bg-gray-200 rounded mb-2 animate-pulse'></div>
+    //           <div className='h-5 w-48 bg-gray-200 rounded animate-pulse'></div>
+    //         </div>
+
+    //         <div className='text-gray-500 text-lg mb-4'>
+    //           <div className='h-5 w-24 bg-gray-200 rounded mb-2 animate-pulse'></div>
+    //           <div className='h-5 w-64 bg-gray-200 rounded animate-pulse'></div>
+    //         </div>
+
+    //         <div className='text-lg text-gray-700 mb-6 leading-relaxed'>
+    //           <div className='space-y-3'>
+    //             <div className='h-5 w-full bg-gray-200 rounded animate-pulse'></div>
+    //             <div className='h-5 w-5/6 bg-gray-200 rounded animate-pulse'></div>
+    //             <div className='h-5 w-4/6 bg-gray-200 rounded animate-pulse'></div>
+    //             <div className='h-5 w-2/3 bg-gray-200 rounded animate-pulse'></div>
+    //           </div>
+    //         </div>
+
+    //         <div className='h-10 w-40 bg-gray-300 rounded animate-pulse'></div>
+    //       </div>
+    //       <div className='flex justify-center md:justify-end'>
+    //         <div className='w-80 h-96 bg-gray-300 rounded-lg animate-pulse'></div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </section>
+    // );
   }
 
   const formattedDateForUrl = generateSlug(todayDevotional.date);

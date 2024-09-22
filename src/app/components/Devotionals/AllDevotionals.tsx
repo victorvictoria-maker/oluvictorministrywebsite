@@ -3,13 +3,13 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { formatDateWithDay } from "@/utils/functions";
+import { formatDateWithDay, generateSlug } from "@/utils/functions";
 import DevotionalsGrid from "../Skeletons/devotionalsGrid";
 
 interface Devotional {
   id: string;
   title: string;
-  date: string;
+  date: Date;
   bibleVerse: string;
   content: string;
   declaration: string;
@@ -20,7 +20,7 @@ interface Devotional {
 }
 
 interface AllDevotionalsProps {
-  allDevotionals: Devotional[];
+  allDevotionals: Omit<Devotional, "slug">[];
 }
 
 const AllDevotionals: React.FC<AllDevotionalsProps> = ({ allDevotionals }) => {
@@ -30,16 +30,19 @@ const AllDevotionals: React.FC<AllDevotionalsProps> = ({ allDevotionals }) => {
     []
   );
   const [searchTerm, setSearchTerm] = useState("");
-  const [filterDate, setFilterDate] = useState("");
+  //   const [filterDate, setFilterDate] = useState("");
 
   const devotionalsPerPage = 6;
 
   useEffect(() => {
-    setDevotionals(allDevotionals);
-    setFilteredDevotionals(allDevotionals);
+    const devotionalsWithSlugs = allDevotionals.map((devotional) => ({
+      ...devotional,
+      slug: generateSlug(new Date(devotional.date)), // Generate slug based on the date
+    }));
+    setDevotionals(devotionalsWithSlugs);
+    setFilteredDevotionals(devotionalsWithSlugs);
   }, [allDevotionals]);
 
-  // Handle search by title
   useEffect(() => {
     const searchedDevotionals = devotionals.filter((devotional) =>
       devotional.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -48,16 +51,16 @@ const AllDevotionals: React.FC<AllDevotionalsProps> = ({ allDevotionals }) => {
   }, [searchTerm, devotionals]);
 
   // Handle filter by date
-  useEffect(() => {
-    if (filterDate) {
-      const dateFilteredDevotionals = devotionals.filter(
-        (devotional) => devotional.date === filterDate
-      );
-      setFilteredDevotionals(dateFilteredDevotionals);
-    } else {
-      setFilteredDevotionals(devotionals);
-    }
-  }, [filterDate, devotionals]);
+  //   useEffect(() => {
+  //     if (filterDate) {
+  //       const dateFilteredDevotionals = devotionals.filter(
+  //         (devotional) => devotional.date === filterDate
+  //       );
+  //       setFilteredDevotionals(dateFilteredDevotionals);
+  //     } else {
+  //       setFilteredDevotionals(devotionals);
+  //     }
+  //   }, [filterDate, devotionals]);
 
   // Pagination logic
   const indexOfLastDevotional = currentPage * devotionalsPerPage;
