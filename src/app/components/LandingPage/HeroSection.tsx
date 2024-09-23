@@ -19,7 +19,7 @@ const HeroSection = () => {
         </h1>
         <p className='text-white text-lg md:text-xl mb-12 px-12'>
           Helping you fulfill your destinies in Christ Jesus with a vision to
-          lead God's people to their promised land
+          lead God&apos;s people to their promised land.
         </p>
 
         <div className='flex space-x-4 justify-center font-montserrat'>

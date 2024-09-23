@@ -1,4 +1,4 @@
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+// import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 
 export const metadata = {
@@ -17,7 +17,7 @@ const AboutPage = () => {
               Empowered by God&apos;s spirit and power, Olu Victor Ministries is
               dedicated to guiding men, women, boys, and girls from every corner
               of the world to fulfill their destinies in Christ Jesus, with a
-              clear vision to lead God's people to their promised land.
+              clear vision to lead God&apos;s people to their promised land.
             </p>
           </div>
 

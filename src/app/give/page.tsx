@@ -94,7 +94,7 @@ const GivePage = () => {
             <p className='text-lg text-gray-700 mb-6 leading-relaxed text-justify'>
               Join us in making a lasting impact by supporting our special
               projects. Your contributions are vital in advancing our mission
-              and extending the reach of God's work.
+              and extending the reach of God&apos;s work.
             </p>
 
             <div className='mb-4'>
