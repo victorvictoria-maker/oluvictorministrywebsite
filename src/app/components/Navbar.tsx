@@ -33,13 +33,16 @@ const Navbar = () => {
             Devotional
           </Link>
 
-          <Link href='/' className='text-lg font-openSans hover:text-gray-700'>
+          {/* <Link href='/' className='text-lg font-openSans hover:text-gray-700'>
             Programs
-          </Link>
+          </Link> */}
           <Link href='/' className='text-lg font-openSans hover:text-gray-700'>
             Sermon
           </Link>
-          <Link href='/' className='text-lg font-openSans hover:text-gray-700'>
+          <Link
+            href='/give'
+            className='text-lg font-openSans hover:text-gray-700'
+          >
             Giving
           </Link>
 
@@ -86,13 +89,13 @@ const Navbar = () => {
           >
             Devotional
           </Link>
-          <Link
+          {/* <Link
             href='/'
             className='text-2xl text-black font-openSans'
             onClick={toggleMenu}
           >
             Programs
-          </Link>
+          </Link> */}
           <Link
             href='/'
             className='text-2xl text-black font-openSans'
@@ -101,7 +104,7 @@ const Navbar = () => {
             Sermon
           </Link>
           <Link
-            href='/'
+            href='/give'
             className='text-2xl text-black font-openSans'
             onClick={toggleMenu}
           >

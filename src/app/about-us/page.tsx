@@ -1,4 +1,5 @@
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FiMapPin } from "react-icons/fi";
 
 export const metadata = {
   title: "About Us",
@@ -13,14 +14,15 @@ const AboutPage = () => {
           <div className='text-center mb-16'>
             <h2 className='text-4xl font-bold text-gray-800 mb-4'>About Us</h2>
             <p className='text-lg text-gray-700'>
-              We are a community-focused church dedicated to nurturing faith,
-              promoting outreach, and enriching lives through our mission and
-              services.
+              Empowered by God&apos;s spirit and power, Olu Victor Ministries is
+              dedicated to guiding men, women, boys, and girls from every corner
+              of the world to fulfill their destinies in Christ Jesus, with a
+              clear vision to lead God's people to their promised land.
             </p>
           </div>
 
           {/* Beliefs and Mission */}
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mb-16'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 md:mb-16 bg-blue-50 p-4 md:p-12'>
             <div className='bg-white p-8 rounded-lg shadow-lg'>
               <h3 className='text-3xl font-bold text-gray-800 mb-4'>
                 Our Beliefs
@@ -60,8 +62,114 @@ const AboutPage = () => {
             </div>
           </div>
 
+          {/* Our Services Section */}
+          <section className='mb-0 md:mb-12 bg-gray-100 py-12'>
+            <h2 className='text-4xl font-extrabold text-center mb-10 text-black'>
+              Our Services
+            </h2>
+
+            <div className='relative'>
+              {/* Timeline line */}
+              <div className='absolute left-1/2 w-1 bg-secondaryColour h-full transform -translate-x-1/2'></div>
+
+              {/* Service 1 */}
+              <div className='relative mb-16 flex items-center justify-start'>
+                <div className='w-full md:w-1/2 pr-6 md:pr-10'>
+                  <div className='bg-white p-8 shadow-lg rounded-lg border-l-8 border-secondaryColour'>
+                    <h3 className='text-2xl font-semibold mb-2 text-black'>
+                      Goodnews Service
+                    </h3>
+                    <p className='text-lg text-gray-600 font-semibold'>
+                      Sunday - 8:00 AM to 10:00 AM
+                    </p>
+                    <p className='text-gray-700'>
+                      Join us for a powerful service filled with worship and
+                      inspiring messages.
+                    </p>
+                  </div>
+                </div>
+                <div className='hidden md:block w-8 h-8 bg-orangeColour rounded-full absolute left-1/2 transform -translate-x-1/2'></div>
+              </div>
+
+              {/* Service 2 */}
+              <div className='relative mb-16 flex items-center justify-end'>
+                <div className='w-full md:w-1/2 pl-6 md:pl-10'>
+                  <div className='bg-white p-8 shadow-lg rounded-lg border-r-8 border-secondaryColour'>
+                    <h3 className='text-2xl font-semibold mb-2 text-black'>
+                      Solution & Prophetic Service
+                    </h3>
+                    <p className='text-lg text-gray-600 font-semibold'>
+                      Wednesday - 5:30 PM to 7:00 PM
+                    </p>
+                    <p className='text-gray-700'>
+                      Experience prophetic insights and solutions to life&apos;s
+                      challenges.
+                    </p>
+                  </div>
+                </div>
+                <div className='hidden md:block w-8 h-8 bg-orangeColour rounded-full absolute left-1/2 transform -translate-x-1/2'></div>
+              </div>
+
+              {/* Service 3 */}
+              <div className='relative mb-16 flex items-center justify-start'>
+                <div className='w-full md:w-1/2 pr-6 md:pr-10'>
+                  <div className='bg-white p-8 shadow-lg rounded-lg border-l-8 border-secondaryColour'>
+                    <h3 className='text-2xl font-semibold mb-2 text-black'>
+                      Nothing Is Wrong With You Conference
+                    </h3>
+                    <p className='text-lg text-gray-600 font-semibold'>
+                      3rd Saturdays - 8:00 AM to 10:30 AM
+                    </p>
+                    <p className='text-gray-700'>
+                      A conference dedicated to affirming your worth and
+                      potential in Christ.
+                    </p>
+                  </div>
+                </div>
+                <div className='hidden md:block w-8 h-8 bg-orangeColour rounded-full absolute left-1/2 transform -translate-x-1/2'></div>
+              </div>
+
+              {/* Service 4 */}
+              <div className='relative mb-16 flex items-center justify-end'>
+                <div className='w-full md:w-1/2 pl-6 md:pl-10'>
+                  <div className='bg-white p-8 shadow-lg rounded-lg border-r-8 border-secondaryColour'>
+                    <h3 className='text-2xl font-semibold mb-2 text-black'>
+                      Ultimate Power Night
+                    </h3>
+                    <p className='text-lg text-gray-600 font-semibold'>
+                      Every Friday - 12:00 AM to 01:00 AM
+                    </p>
+                    <p className='text-gray-700'>
+                      A night of intense prayer and supernatural encounters.
+                    </p>
+                  </div>
+                </div>
+                <div className='hidden md:block w-8 h-8 bg-orangeColour rounded-full absolute left-1/2 transform -translate-x-1/2'></div>
+              </div>
+
+              {/* Service 5 */}
+              <div className='relative mb-16 flex items-center justify-start'>
+                <div className='w-full md:w-1/2 pr-6 md:pr-10'>
+                  <div className='bg-white p-8 shadow-lg rounded-lg border-l-8 border-secondaryColour'>
+                    <h3 className='text-2xl font-semibold mb-2 text-black'>
+                      Single&apos;s Word
+                    </h3>
+                    <p className='text-lg text-gray-600 font-semibold'>
+                      Last Sundays (Bimonthly) - 3:00 PM to 5:30 PM
+                    </p>
+                    <p className='text-gray-700'>
+                      A special session addressing the unique needs of singles
+                      in the faith.
+                    </p>
+                  </div>
+                </div>
+                <div className='hidden md:block w-8 h-8 bg-orangeColour rounded-full absolute left-1/2 transform -translate-x-1/2'></div>
+              </div>
+            </div>
+          </section>
+
           {/* Church Branches Section */}
-          <section className='mb-16'>
+          <section className='mb-8 md:mb-16'>
             <h2 className='text-4xl font-bold text-gray-800 text-center mb-8'>
               Our Church Branches
             </h2>
@@ -99,42 +207,8 @@ const AboutPage = () => {
             </div>
           </section>
 
-          {/* Our Services Section */}
-          <section className='mb-16'>
-            <h2 className='text-4xl font-bold text-gray-800 text-center mb-8'>
-              Our Services
-            </h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-              <Service
-                title='Goodnews Service'
-                time='Sunday - 8:00 AM to 10:00 AM'
-                description='Join us for a powerful service filled with worship and inspiring messages.'
-              />
-              <Service
-                title='Solution & Prophetic Service'
-                time='Wednesday - 5:30 PM to 7:00 PM'
-                description="Experience prophetic insights and solutions to life's challenges."
-              />
-              <Service
-                title='Nothing Is Wrong With You Conference'
-                time='3rd Saturdays - 8:00 AM to 10:30 AM'
-                description='A conference dedicated to affirming your worth and potential in Christ.'
-              />
-              <Service
-                title='Ultimate Power Night'
-                time='Every Friday - 12:00 AM to 01:00 AM'
-                description='A night of intense prayer and supernatural encounters.'
-              />
-              <Service
-                title="Single's Word"
-                time='Last Sundays (Bimonthly) - 3:00 PM to 5:30 PM'
-                description='A special session addressing the unique needs of singles in the faith.'
-              />
-            </div>
-          </section>
-
           {/* Meet Our Senior Pastors Section */}
-          <section className='bg-gray-100 py-16 mb-16'>
+          {/* <section className='bg-gray-100 py-16 mb-16'>
             <div className='container mx-auto px-6 text-center'>
               <h2 className='text-4xl font-bold text-gray-800 mb-8'>
                 Meet Our Senior Pastors
@@ -154,10 +228,10 @@ const AboutPage = () => {
                 />
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* Contact Us Section */}
-          <section className='py-16'>
+          {/* <section className='py-16'>
             <div className='container mx-auto px-6'>
               <h2 className='text-4xl font-bold text-gray-800 text-center mb-8'>
                 Contact Us
@@ -180,7 +254,7 @@ const AboutPage = () => {
                 />
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
       </section>
     </>
@@ -197,62 +271,45 @@ const Branch = ({
   location: string;
   mapLink: string;
 }) => (
-  <div className='bg-white p-6 rounded-lg shadow-lg'>
+  <div className='bg-white p-6 rounded-lg shadow-lg border-t-2 border-orangeColour'>
     <h4 className='text-2xl font-bold text-gray-800 mb-2'>{title}</h4>
     <p className='text-lg text-gray-700 mb-4'>{location}</p>
     <a
       href={mapLink}
       target='_blank'
       rel='noopener noreferrer'
-      className='text-blue-600 hover:underline'
+      className='flex items-center text-lg text-secondaryColour hover:underline'
     >
-      View on Map
+      <FiMapPin className='mr-2' /> View on Map
     </a>
   </div>
 );
 
-// Service Component
-const Service = ({
-  title,
-  time,
-  description,
-}: {
-  title: string;
-  time: string;
-  description: string;
-}) => (
-  <div className='bg-white p-6 rounded-lg shadow-lg'>
-    <h4 className='text-2xl font-bold text-gray-800 mb-2'>{title}</h4>
-    <p className='text-lg text-gray-700 mb-4'>{time}</p>
-    <p className='text-gray-600'>{description}</p>
-  </div>
-);
-
 // Pastor Component
-const Pastor = ({ name, branch }: { name: string; branch: string }) => (
-  <div className='bg-white p-6 rounded-lg shadow-lg mb-8 md:mb-0'>
-    <h4 className='text-2xl font-bold text-gray-800 mb-2'>{name}</h4>
-    <p className='text-lg text-gray-700'>{branch}</p>
-  </div>
-);
+// const Pastor = ({ name, branch }: { name: string; branch: string }) => (
+//   <div className='bg-white p-6 rounded-lg shadow-lg mb-8 md:mb-0'>
+//     <h4 className='text-2xl font-bold text-gray-800 mb-2'>{name}</h4>
+//     <p className='text-lg text-gray-700'>{branch}</p>
+//   </div>
+// );
 
 // Contact Detail Component
-const ContactDetail = ({
-  icon,
-  title,
-  detail,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  detail: string;
-}) => (
-  <div className='bg-white p-6 rounded-lg shadow-lg flex items-center mb-8 md:mb-0'>
-    <div className='mr-6'>{icon}</div>
-    <div>
-      <h4 className='text-2xl font-bold text-gray-800 mb-1'>{title}</h4>
-      <p className='text-lg text-gray-700'>{detail}</p>
-    </div>
-  </div>
-);
+// const ContactDetail = ({
+//   icon,
+//   title,
+//   detail,
+// }: {
+//   icon: React.ReactNode;
+//   title: string;
+//   detail: string;
+// }) => (
+//   <div className='bg-white p-6 rounded-lg shadow-lg flex items-center mb-8 md:mb-0'>
+//     <div className='mr-6'>{icon}</div>
+//     <div>
+//       <h4 className='text-2xl font-bold text-gray-800 mb-1'>{title}</h4>
+//       <p className='text-lg text-gray-700'>{detail}</p>
+//     </div>
+//   </div>
+// );
 
 export default AboutPage;
