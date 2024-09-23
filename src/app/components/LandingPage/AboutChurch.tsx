@@ -1,7 +1,7 @@
 const AboutChurch = () => {
   return (
-    <section className='bg-blue-50 py-12'>
-      <div className='container mx-auto px-6'>
+    <section className='bg-blue-50 py-12 '>
+      <div className='container mx-auto px-6 md:mt-12'>
         {/* Header */}
         <h2 className='text-4xl md:text-5xl font-extrabold text-center mb-6 text-black relative'>
           About Us

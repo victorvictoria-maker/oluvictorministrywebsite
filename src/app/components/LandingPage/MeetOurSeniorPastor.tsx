@@ -16,7 +16,7 @@ const MeetOurSeniorPastor = () => {
           </div>
 
           <div className='mt-6 md:mt-0 md:ml-8 text-center md:text-left'>
-            <h2 className='text-4xl lg:text-5xl font-extrabold text-center mb-8 text-black relative font-montserrat'>
+            <h2 className='text-4xl lg:text-5xl font-extrabold  mb-8 text-black relative font-montserrat'>
               A Special Welcome from Our Senior Pastor
             </h2>
             <p className='text-lg md:text-xl font-openSans text-gray-800'>

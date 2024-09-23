@@ -5,7 +5,7 @@ import { FiMapPin } from "react-icons/fi";
 const UpcomingProgram = () => {
   return (
     <section className='bg-white py-12'>
-      <div className='container mx-auto px-6'>
+      <div className='container mx-auto px-6 md:mt-12'>
         <h2 className='text-4xl md:text-5xl font-extrabold text-center mb-6 text-black relative'>
           <span className='inline-block mb-2 relative'>Our Next Program</span>
         </h2>

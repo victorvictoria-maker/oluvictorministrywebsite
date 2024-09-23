@@ -118,7 +118,7 @@ const AllDevotionals: React.FC<AllDevotionalsProps> = ({ allDevotionals }) => {
                   className='w-full h-40 object-cover rounded-md'
                   priority
                 />
-                <h2 className='text-xl font-semibold mt-4  min-h-28'>
+                <h2 className='text-lg lg:text-xl font-semibold mt-4 md:min-h-20 '>
                   {devotional.title}
                 </h2>
                 <p className='text-gray-600 mt-2'>

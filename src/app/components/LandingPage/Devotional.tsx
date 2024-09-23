@@ -61,14 +61,14 @@ const Devotional = async () => {
     <section className='bg-gray-100 py-12'>
       {!todayDevotional && <p>Todays devotional is laoding...</p>}
       {todayDevotional && (
-        <div className='container mx-auto px-6 '>
+        <div className='container mx-auto px-6  md:mt-12'>
           <h2 className='text-4xl md:text-5xl font-extrabold text-center mb-4 text-black'>
             Today&apos;s Devotional
           </h2>
 
-          <div className='shadow-md rounded-lg p-8 grid grid-cols-1  md:grid-cols-2 items-center gap-6'>
+          <div className='shadow-md rounded-lg p-8 flex flex-col-reverse lg:grid lg:grid-cols-2 items-center gap-6'>
             <div className='md:pr-8'>
-              <h3 className='text-3xl lg:text-4xl font-bold mb-4 text-black tracking-wider uppercase relative font-openSans'>
+              <h3 className='text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-black tracking-wider uppercase relative font-openSans'>
                 {todayDevotional.title}
                 <span className='block w-24 h-1 bg-orangeColour mt-3'></span>{" "}
               </h3>
@@ -94,7 +94,7 @@ const Devotional = async () => {
               </Link>
             </div>
 
-            <div className='flex justify-center md:justify-end'>
+            <div className='flex justify-center lg:justify-end'>
               <Image
                 src='/images/Devotional.jpg'
                 alt='Devotional of the Day'

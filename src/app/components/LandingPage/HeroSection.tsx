@@ -6,7 +6,7 @@ const HeroSection = () => {
       className='py-24 lg:h-[95vh] bg-cover bg-center flex flex-col justify-center items-center text-center px-4'
       style={{
         backgroundImage: `url('/images/background-image.jpg')`,
-        backgroundColor: "rgba(25, 25, 25, 0.7)",
+        backgroundColor: "rgba(25, 25, 25, 0.85)",
         backgroundBlendMode: "overlay",
         backgroundPosition: "50%",
         minHeight: "100%",
