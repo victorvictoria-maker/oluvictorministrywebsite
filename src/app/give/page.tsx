@@ -17,8 +17,8 @@ const GivePage = () => {
             </h3>
 
             <p className='text-lg text-gray-700 mb-6 leading-relaxed text-justify'>
-              We greatly appreciate your generosity. You can give your tithe and
-              offering to the following accounts:
+              We greatly appreciate your generosity. You can give your seed to
+              the following accounts:
             </p>
 
             <div className='mb-4'>
@@ -29,27 +29,29 @@ const GivePage = () => {
                 <span className='font-semibold'>Bank:</span> Access Bank
               </p>
               <p className='text-lg text-gray-700'>
-                <span className='font-semibold'>Account Name:</span> Church Name
+                <span className='font-semibold'>Account Name:</span> Olu Victor
+                Multibiz Corporate Resources Ltd
               </p>
               <p className='text-lg text-gray-700'>
-                <span className='font-semibold'>Account Number:</span>{" "}
-                0123456789
+                <span className='font-semibold'>Account Number:</span>
+                0080552755
               </p>
             </div>
 
             <div className='mb-4'>
               <h4 className='text-2xl font-semibold text-black mb-2'>
-                USD (Dom) Account:
+                USD Account:
               </h4>
               <p className='text-lg text-gray-700'>
-                <span className='font-semibold'>Bank:</span> Access Bank
+                <span className='font-semibold'>Bank:</span> Guarantee Trust
+                Bank
               </p>
               <p className='text-lg text-gray-700'>
-                <span className='font-semibold'>Account Name:</span> Church Name
+                <span className='font-semibold'>Account Name:</span> Olu Victor
               </p>
               <p className='text-lg text-gray-700'>
                 <span className='font-semibold'>Account Number:</span>{" "}
-                9876543210
+                0876151506
               </p>
             </div>
 
@@ -77,7 +79,7 @@ const GivePage = () => {
         <div className='shadow rounded-lg p-8 grid grid-cols-1 md:grid-cols-2 items-center gap-6 mt-12'>
           <div className='flex justify-center md:justify-start'>
             <Image
-              src='/images/building.jpeg'
+              src='/images/project.jpg'
               alt='Giving to Projects'
               width={500}
               height={600}
@@ -102,41 +104,35 @@ const GivePage = () => {
                 Naira Account for Projects:
               </h4>
               <p className='text-lg text-gray-700'>
-                <span className='font-semibold'>Bank:</span> Access Bank
+                <span className='font-semibold'>Bank:</span> Guarantee Trust
+                Bank
               </p>
               <p className='text-lg text-gray-700'>
-                <span className='font-semibold'>Account Name:</span> Church
-                Project Fund
+                <span className='font-semibold'>Account Name:</span> Jesus House
+                International Outreach
               </p>
               <p className='text-lg text-gray-700'>
                 <span className='font-semibold'>Account Number:</span>{" "}
-                1234567890
+                0119589345
               </p>
             </div>
 
             <div className='mb-4'>
               <h4 className='text-2xl font-semibold text-black mb-2'>
-                USD (Dom) Account for Projects:
+                USD Account for Projects:
               </h4>
               <p className='text-lg text-gray-700'>
-                <span className='font-semibold'>Bank:</span> Access Bank
+                <span className='font-semibold'>Bank:</span> Guarantee Trust
+                Bank
               </p>
               <p className='text-lg text-gray-700'>
-                <span className='font-semibold'>Account Name:</span> Church
-                Project Fund
+                <span className='font-semibold'>Account Name:</span> Olu Victor
               </p>
               <p className='text-lg text-gray-700'>
                 <span className='font-semibold'>Account Number:</span>{" "}
-                9876543211
+                0876151506
               </p>
             </div>
-
-            {/* <Link
-              href='/projects'
-              className='text-lg bg-primaryColour text-white px-6 py-4 rounded-md font-openSans hover:bg-primaryColour/90'
-            >
-              Learn More About Our Projects
-            </Link> */}
           </div>
         </div>
       </section>

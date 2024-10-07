@@ -36,7 +36,10 @@ const Navbar = () => {
           {/* <Link href='/' className='text-lg font-openSans hover:text-gray-700'>
             Programs
           </Link> */}
-          <Link href='/' className='text-lg font-openSans hover:text-gray-700'>
+          <Link
+            href='/sermon'
+            className='text-lg font-openSans hover:text-gray-700'
+          >
             Sermon
           </Link>
           <Link
@@ -47,7 +50,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href='/'
+            href='/contact'
             className='bg-primaryColour text-white px-4 py-2 rounded-md font-openSans hover:bg-primaryColour/90'
           >
             Get in Touch
@@ -97,7 +100,7 @@ const Navbar = () => {
             Programs
           </Link> */}
           <Link
-            href='/'
+            href='/sermon'
             className='text-2xl text-black font-openSans'
             onClick={toggleMenu}
           >
@@ -111,7 +114,7 @@ const Navbar = () => {
             Giving
           </Link>
           <Link
-            href='/'
+            href='/contact'
             className='bg-primaryColour text-white px-6 py-3 rounded-md font-openSans'
             onClick={toggleMenu}
           >

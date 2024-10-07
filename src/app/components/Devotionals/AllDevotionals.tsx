@@ -109,13 +109,13 @@ const AllDevotionals: React.FC<AllDevotionalsProps> = ({ allDevotionals }) => {
         {currentDevotionals.length > 0 && (
           <>
             {currentDevotionals.map((devotional) => (
-              <div key={devotional.id} className='shadow-lg rounded-lg p-4 '>
+              <div key={devotional.id} className='shadow-lg rounded-lg p-4'>
                 <Image
                   src={devotional.imageUrl}
                   alt='Devotional Image'
                   width={700}
                   height={600}
-                  className='w-full h-40 object-cover rounded-md'
+                  className='w-full mt-6 h-56 object-cover rounded-md  '
                   priority
                 />
                 <h2 className='text-lg lg:text-xl font-semibold mt-4 md:min-h-20 '>
