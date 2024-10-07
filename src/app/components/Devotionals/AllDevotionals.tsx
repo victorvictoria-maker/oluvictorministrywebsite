@@ -84,6 +84,22 @@ const AllDevotionals: React.FC<AllDevotionalsProps> = ({ allDevotionals }) => {
     }
   };
 
+  const downloadImage = (imageUrl: string, imageName: string) => {
+    fetch(imageUrl)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", `${imageName}.jpg`); // Set the filename here
+        document.body.appendChild(link);
+        link.click();
+        link.parentNode?.removeChild(link);
+        window.URL.revokeObjectURL(url); // Clean up the object URL
+      })
+      .catch((error) => console.error("Error downloading the image", error));
+  };
+
   return (
     <>
       {/* Search and Filter Inputs */}
@@ -104,12 +120,15 @@ const AllDevotionals: React.FC<AllDevotionalsProps> = ({ allDevotionals }) => {
       </div>
 
       {/* Devotionals Grid */}
+      {currentDevotionals.length <= 0 && <DevotionalsGrid />}
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4'>
-        {currentDevotionals.length <= 0 && <DevotionalsGrid />}
         {currentDevotionals.length > 0 && (
           <>
             {currentDevotionals.map((devotional) => (
-              <div key={devotional.id} className='shadow-lg rounded-lg p-4'>
+              <div
+                key={devotional.id}
+                className=' relative shadow-lg rounded-lg p-4'
+              >
                 <Image
                   src={devotional.imageUrl}
                   alt='Devotional Image'
@@ -118,6 +137,28 @@ const AllDevotionals: React.FC<AllDevotionalsProps> = ({ allDevotionals }) => {
                   className='w-full mt-6 h-56 object-cover rounded-md  '
                   priority
                 />
+                <button
+                  onClick={() =>
+                    downloadImage(devotional.imageUrl, devotional.title)
+                  }
+                  className='absolute top-8 right-2 border border-secondaryColour bg-white p-[6px] rounded-full shadow hover:bg-opacity-90 transition'
+                >
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    className='h-6 w-6 text-gray-700'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4'
+                    />
+                  </svg>
+                </button>
+
                 <h2 className='text-lg lg:text-xl font-semibold mt-4 md:min-h-20 '>
                   {devotional.title}
                 </h2>

@@ -1,7 +1,7 @@
 const EachDevotionalDetailSkeleton = () => {
   return (
     <div className='p-8 max-w-3xl mx-auto mt-20'>
-      <div className='w-full h-60 bg-gray-300 rounded-md mb-6 animate-pulse'></div>
+      <div className='w-full h-80 bg-gray-300 rounded-md mb-6 animate-pulse'></div>
 
       <div className='h-8 bg-gray-300 rounded-md w-3/4 mb-4 animate-pulse'></div>
 

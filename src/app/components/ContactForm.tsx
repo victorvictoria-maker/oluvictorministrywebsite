@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { toast } from "react-toastify";
+import { contactMe } from "../../../serveractions/contactme";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -25,21 +26,21 @@ const ContactForm = () => {
 
     startTransition(async () => {
       try {
-        // const result = await contactMe(formData);
-        // if (result.success) {
-        //   toast.success(result.success);
-        //   setFormData({
-        //     fullName: "",
-        //     phoneNo: "",
-        //     email: "",
-        //     message: "",
-        //   });
-        // } else {
-        //   toast.error(result.error);
-        // }
+        const result = await contactMe(formData);
+        if (result.success) {
+          //   console.log("successful mail");
+          toast.success(result.success);
+          setFormData({
+            fullName: "",
+            phoneNo: "",
+            email: "",
+            message: "",
+          });
 
-        console.log(formData);
-        toast.success("Thank you. We would reach out to you shortly.");
+          //   console.log("mail sent");
+        } else {
+          toast.error(result.error);
+        }
       } catch (error) {
         toast.error(
           "Something went wrong while trying to contact, please try again."
