@@ -1,9 +1,6 @@
 import Image from "next/image";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
-// import Link from "next/link";
-
-// https://oluvictorministry.vercel.app
 
 const DoveTv = async () => {
   return (
