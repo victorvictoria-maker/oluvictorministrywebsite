@@ -96,7 +96,7 @@ const Devotional = async () => {
 
             <div className='flex justify-center lg:justify-end'>
               <Image
-                src='/images/Devotional.jpg'
+                src={todayDevotional.imageUrl}
                 alt='Devotional of the Day'
                 width={500}
                 height={600}
