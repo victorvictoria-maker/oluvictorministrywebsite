@@ -12,22 +12,19 @@ const AboutChurch = () => {
         {/* Content */}
         <div className='bg-white shadow-lg rounded-lg p-8 md:p-12 text-center md:text-left'>
           <p className='text-lg md:text-xl text-gray-700 mb-6 font-openSans'>
-            At Olu Victor Ministry, we are a vibrant community committed to
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            expedita recusandae nam alias est, harum doloribus maxime tenetur,
-            impedit, magni omnis facere eligendi ea aliquid nihil sequi atque
-            numquam cumque. Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Est soluta dolore voluptatem.
-            {/* growing in faith and serving others. Our mission is to create a
-            welcoming space where individuals can connect with God and each
-            other, experience transformative worship, and make a positive impact
-            in our world. Join us as we journey together in faith and love,
-            building a strong, supportive community rooted in Christ. */}
+            We are a commission with a global mandate to help people enter into
+            their promised lands, that is to help you fulfill your destiny in
+            Christ. It&apos;s going to be our greatest joy if you could join
+            yourself with us as we walk hands in hands with God to equip and
+            assist you become all that God has designed you to be on earth. This
+            is our promise to you in Christ, that you will surely fulfill your
+            destiny here on earth and make heaven at the end.
           </p>
           <p className='text-lg md:text-xl text-gray-600 font-openSans'>
             Whether you&apos;re new to our church or have been with us for
             years, we&apos;re excited to have you here and look forward to
-            growing together in faith and fellowship.
+            growing together in faith and fellowship. <br /> NOTHING IS WRONG
+            WITH YOU IN CHRIST JESUS!
           </p>
         </div>
       </div>
